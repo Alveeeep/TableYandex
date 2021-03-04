@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if 'инженер' in prof or 'строитель' in prof %}
+        <h4>Инженерные тренажеры</h4>
+        <img src="{{ image1 }}">
+    {% else %}
+        <h4>Научные симуляторы</h4>
+        <img src="{{ image2 }}">
+        image2
+    {% endif %}
+{% endblock %}
